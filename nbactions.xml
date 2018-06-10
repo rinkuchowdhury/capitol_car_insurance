@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actions>
+    <action>
+        <actionName>CUSTOM-maven-clean</actionName>
+        <displayName>maven-clean</displayName>
+        <goals>
+            <goal>clean:clean</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-maven-install</actionName>
+        <displayName>maven-install</displayName>
+        <goals>
+            <goal>install</goal>
+        </goals>
+    </action>
+</actions>
