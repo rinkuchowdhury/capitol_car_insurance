@@ -1,0 +1,75 @@
+<form name="request">
+    <div class="form-group">
+        <label for="messageName">Message name</label>
+        <input class="form-control"
+               cam-variable-type="String"
+               cam-variable-name="messageName"
+               name="messageName" />
+        <div>This field is required</div>
+    </div>
+    
+    <div class="form-group">
+        <label for="processInstanceId">Process ID</label>
+        <input class="form-control"
+               cam-variable-type="String"
+               cam-variable-name="processInstanceId"
+               name="processInstanceId" />
+        <div>This field is required</div>
+    </div>
+
+    
+    <div class="form-group">
+        <label for="contractId">Contract ID</label>
+        <input class="form-control"
+               cam-variable-type="String"
+               cam-variable-name="contractId"
+               name="contractId" />
+        <div>This field is required</div>
+    </div>
+    
+    <div class="form-group">
+        <label for="customerType">Customer Type</label>
+        <div>
+          <select cam-variable-name="customerType"
+                  cam-variable-type="String"
+                  class="form-control">
+            <option>business</option>
+            <option>private</option>
+          </select>
+        </div>
+        <div>This field is required</div>
+     </div>
+    
+    <div class="form-group">
+      <label for="rentFee">Renting fee</label>
+      <input class="form-control"
+             cam-variable-type="Double"
+             cam-variable-name="rentFee"
+             name="rentFee" />
+    </div>
+    
+    <div class="form-group">
+      <label for="numberOfDays">Renting Period</label>
+      <input class="form-control"
+             cam-variable-type="Integer"
+             cam-variable-name="numberOfDays"
+             name="numberOfDays" />
+    </div>
+    
+     <div class="form-group">
+      <label for="numberOfCars">Number of cars</label>
+      <input class="form-control"
+             cam-variable-type="Integer"
+             cam-variable-name="numberOfCars"
+             name="numberOfCars" />
+    </div> 
+    
+    <div class="form-group">
+      <label for="insurance">Insurance Type</label>
+      <input class="form-control"
+             cam-variable-type="String"
+             cam-variable-name="insurance"
+             name="insurance" />
+    </div>
+    
+</form>
