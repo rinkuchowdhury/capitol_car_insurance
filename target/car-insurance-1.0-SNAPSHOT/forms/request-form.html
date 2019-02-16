@@ -9,23 +9,14 @@
     </div>
     
     <div class="form-group">
-        <label for="processInstanceId">Process ID</label>
+        <label for="bvisProcessInstanceID">Process ID</label>
         <input class="form-control"
                cam-variable-type="String"
-               cam-variable-name="processInstanceId"
-               name="processInstanceId" />
+               cam-variable-name="bvisProcessInstanceID"
+               name="bvisProcessInstanceID" />
         <div>This field is required</div>
     </div>
 
-    
-    <div class="form-group">
-        <label for="contractId">Contract ID</label>
-        <input class="form-control"
-               cam-variable-type="String"
-               cam-variable-name="contractId"
-               name="contractId" />
-        <div>This field is required</div>
-    </div>
     
     <div class="form-group">
         <label for="customerType">Customer Type</label>
@@ -39,15 +30,7 @@
         </div>
         <div>This field is required</div>
      </div>
-    
-    <div class="form-group">
-      <label for="rentFee">Renting fee</label>
-      <input class="form-control"
-             cam-variable-type="Double"
-             cam-variable-name="rentFee"
-             name="rentFee" />
-    </div>
-    
+   
     <div class="form-group">
       <label for="numberOfDays">Renting Period</label>
       <input class="form-control"
@@ -56,20 +39,28 @@
              name="numberOfDays" />
     </div>
     
-     <div class="form-group">
+    <div class="form-group">
       <label for="numberOfCars">Number of cars</label>
       <input class="form-control"
              cam-variable-type="Integer"
              cam-variable-name="numberOfCars"
              name="numberOfCars" />
     </div> 
-    
+    <div class="form-group">
+      <label for="total_cost">Total value of car</label>
+      <input class="form-control"
+             cam-variable-type="Integer"
+             cam-variable-name="total_cost"
+             name="total_cost" />
+    </div> 
     <div class="form-group">
       <label for="insurance">Insurance Type</label>
-      <input class="form-control"
-             cam-variable-type="String"
-             cam-variable-name="insurance"
-             name="insurance" />
+      <div class ="form-group">
+           <input type="checkbox" name="fullCover" value=true>Full Insurance<br>
+           <input type="checkbox" name="halfCover" value=true>Half Insurance<br>    
+           <input type="checkbox" name="theftCover" value=true>Theft Insurance<br>
+           <input type="checkbox" name="thirdPartyLiability" value=true>Third Party Liability <br>          
+      </div>
     </div>
     
 </form>
